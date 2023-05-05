@@ -31,6 +31,8 @@ export async function GET(
   });
 }
 
-export const config = {
-  runtime: "edge",
+segment export config = {
+  segment: {
+    apiKey: process.env.SEGMENT_API_KEY,
+  },
 };
